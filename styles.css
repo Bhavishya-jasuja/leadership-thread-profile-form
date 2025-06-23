@@ -6,7 +6,7 @@
 }
 
 body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica', 'Arial', sans-serif;
+    font-family: Inter;
     background-color: #ffffff;
     min-height: 100vh;
     overflow-x: hidden;
@@ -133,7 +133,7 @@ body {
 
 /* Typography - Visual Hierarchy */
 .form-title {
-    font-size: 28px;
+    font-size: 24px;
     font-weight: 400;
     margin-bottom: 24px;
     color: #FFFFFF;
