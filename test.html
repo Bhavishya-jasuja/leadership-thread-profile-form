@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Your Profile - The Leadership Thread</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="logo-section">
+            <!-- Main Leadership Thread logo on LEFT -->
+            <div class="main-logo"></div>
+        </div>
+        
+        <div class="user-section">
+            <div class="user-info">
+                <div class="user-avatar"></div>
+                <span class="user-name">Dr. John Doe</span>
+                <span class="dropdown-arrow">⌄</span>
+            </div>
+            <!-- Moonshot logo on RIGHT -->
+            <div class="moonshot-logo"></div>
+            <button class="hamburger-menu">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <section class="form-container">
+            <h1 class="form-title">Create Your Profile</h1>
+            
+            <form id="profileForm">
+                <!-- Your Name Section -->
+                <div class="form-section">
+                    <div class="section-title">Your Name</div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input 
+                                type="text" 
+                                id="firstName"
+                                name="firstName"
+                                class="form-input" 
+                                placeholder="First Name"
+                                required
+                            >
+                        </div>
+                        <div class="form-group">
+                            <input 
+                                type="text" 
+                                id="lastName"
+                                name="lastName"
+                                class="form-input" 
+                                placeholder="Last Name"
+                                required
+                            >
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Details Section -->
+                <div class="form-section">
+                    <div class="section-title">Contact Details</div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input 
+                                type="email" 
+                                id="email"
+                                name="email"
+                                class="form-input" 
+                                placeholder="Email"
+                                required
+                            >
+                        </div>
+                        <div class="form-group">
+                            <input 
+                                type="tel" 
+                                id="mobile"
+                                name="mobile"
+                                class="form-input" 
+                                placeholder="Mobile No"
+                                required
+                            >
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Select Primary Role Section -->
+                <div class="form-section">
+                    <div class="section-title">Select Primary Role:</div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label class="field-label">Role</label>
+                            <select 
+                                id="role"
+                                name="role"
+                                class="form-select" 
+                                required
+                            >
+                                <option value="" disabled selected hidden>Specialist (Partner)</option>
+                                <option disabled class="category-header">Specialist</option>
+                                <option value="owner">Owner</option>
+                                <option value="partner">Partner</option>
+                                <option value="associate">Associate</option>
+                                <option disabled class="category-header with-line">Others</option>
+                                <option value="hygienist">Hygienist</option>
+                                <option value="practice-success-director">Practice Success Director</option>
+                                <option value="strategic-growth-partner">Strategic Growth Partner</option>
+                                <option value="treatment-consultant">Treatment Consultant</option>
+                                <option value="custom-role">Custom Role</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label class="field-label">Specialty Type</label>
+                            <select 
+                                id="specialtyType"
+                                name="specialtyType"
+                                class="form-select" 
+                                required
+                            >
+                                <option value="" disabled selected hidden>Select</option>
+                                <option value="periodontist">Periodontist</option>
+                                <option value="endodontist">Endodontist</option>
+                                <option value="oral-surgeon">Oral Surgeon</option>
+                                <option value="prosthodontist">Prosthodontist</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="checkbox-container">
+                        <label class="checkbox" for="producer">
+                            <input 
+                                type="checkbox" 
+                                id="producer"
+                                name="producer"
+                            >
+                        </label>
+                        <label for="producer" class="checkbox-label">
+                            Is this user a producer?
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Select Location Section -->
+                <div class="form-section">
+                    <div class="section-title">Select Location</div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <select 
+                                id="country"
+                                name="country"
+                                class="form-select" 
+                                required
+                            >
+                                <option value="" disabled selected hidden>Select</option>
+                                <option value="usa">United States</option>
+                                <option value="canada">Canada</option>
+                                <option value="uk">United Kingdom</option>
+                                <option value="australia">Australia</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <select 
+                                id="state"
+                                name="state"
+                                class="form-select" 
+                                required
+                            >
+                                <option value="" disabled selected hidden>Select</option>
+                                <option value="california">California</option>
+                                <option value="texas">Texas</option>
+                                <option value="florida">Florida</option>
+                                <option value="new-york">New York</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Buttons -->
+                <div class="button-container">
+                    <button type="button" class="btn btn-cancel">Cancel</button>
+                    <button type="submit" class="btn btn-submit">Submit</button>
+                </div>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
