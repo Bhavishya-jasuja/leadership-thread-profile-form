@@ -1,4 +1,3 @@
-# leadership-thread-profile-form
 # The Leadership Thread - Profile Creation Form
 
 A responsive profile creation form assignment built with HTML5 and CSS3.
