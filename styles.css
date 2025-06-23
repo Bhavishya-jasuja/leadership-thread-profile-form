@@ -1,6 +1,3 @@
-/* Import Inter Font */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
-
 /* Reset & Base Styles */
 * {
     margin: 0;
@@ -9,7 +6,7 @@
 }
 
 body {
-    font-family: 'Inter', sans-serif;
+    font-family: Inter;
     background-color: #ffffff;
     min-height: 100vh;
     overflow-x: hidden;
@@ -42,7 +39,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: url('images/theleadershipthread-full-white.png') #ffffff 50% / cover no-repeat;
+    background: url('images/the.png') #ffffff 50% / cover no-repeat;
 }
 
 .user-section {
@@ -68,7 +65,9 @@ body {
     align-items: center;
     border-radius: 50%;
     border: 2px solid #CDDBE4;
-    background: url('images/avatar.jpg') #ffffff 50% / cover no-repeat;
+    background-image: url('images/avatar.jpg');
+    background-size: cover;
+    background-position: center;
     background-color: #8E8F8F;
     flex-shrink: 0;
 }
@@ -97,7 +96,7 @@ body {
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
-    background: url('images/moonshot-logo-wide.png') #ffffff 50% / cover no-repeat;
+    background: url('images/dental.png') #ffffff 50% / cover no-repeat;
 }
 
 .hamburger-menu {
@@ -134,7 +133,7 @@ body {
 
 /* Typography - Visual Hierarchy */
 .form-title {
-    font-size: 28px;
+    font-size: 24px;
     font-weight: 400;
     margin-bottom: 24px;
     color: #FFFFFF;
@@ -321,8 +320,7 @@ body {
 }
 
 .btn {
-    width: 48px;
-    height: 8px;
+    padding: 8px 48px;
     border-radius: 8px;
     font-size: 14px;
     font-weight: 600;
@@ -331,9 +329,6 @@ body {
     border: none;
     outline: none;
     letter-spacing: 0.3px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .btn-cancel {
