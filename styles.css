@@ -108,6 +108,8 @@ body {
     gap: 4px;
     cursor: pointer;
     padding: 4px;
+    background: none;
+    border: none;
 }
 
 .hamburger-line {
@@ -153,15 +155,12 @@ body {
 
 .field-label {
     color: #CDDBE4;
-    font-size: 13px;
-    margin-bottom: 8px;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
     font-weight: 400;
+    line-height: 20px;
     display: block;
-}
-
-/* Special spacing for Specialty Type label */
-.form-group:has(#specialtyType) .field-label {
-    margin-bottom: 6px;
 }
 
 /* Form Layout - Using Grid */
@@ -183,21 +182,28 @@ body {
 .form-group {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+    align-self: stretch;
+    flex: 1 0 0;
 }
 
-/* Input Styling - Rounded, Dark Background, Light Text */
-.form-input,
-.form-select {
+/* Input Styling - Updated to match Figma specs */
+.form-input {
     background-color: #2B414F;
     border: 1px solid #8E8F8F;
     border-radius: 8px;
-    padding: 14px 16px;
+    padding: 8px;
     color: #FFFFFF;
     font-size: 14px;
     font-weight: 400;
     outline: none;
     transition: all 0.3s ease;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    align-self: stretch;
 }
 
 .form-input::placeholder {
@@ -205,23 +211,35 @@ body {
     font-weight: 400;
 }
 
-.form-input:focus,
-.form-select:focus {
+.form-input:focus {
     border-color: #C6B98B;
     box-shadow: 0 0 0 3px rgba(198, 185, 139, 0.1);
     background-color: #2B414F;
 }
 
-/* Dropdown Styling */
+/* Dropdown Styling - Updated to match Figma specs */
 .form-select {
+    background-color: #2B414F;
+    border: 1px solid #8E8F8F;
+    border-radius: 8px;
+    padding: 8px;
+    color: #8E8F8F;
+    font-size: 14px;
+    font-weight: 400;
+    outline: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
     appearance: none;
     background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="%238E8F8F"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>');
     background-repeat: no-repeat;
     background-position: right 12px center;
     background-size: 16px;
     cursor: pointer;
-    color: #8E8F8F;
-    padding-right: 40px;
+    padding-right: 32px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    align-self: stretch;
 }
 
 .form-select:invalid {
@@ -232,12 +250,26 @@ body {
     color: #FFFFFF;
 }
 
-/* Dropdown Options */
+.form-select:focus {
+    border-color: #C6B98B;
+    box-shadow: 0 0 0 3px rgba(198, 185, 139, 0.1);
+    background-color: #2B414F;
+}
+
+/* Dropdown Options - Updated to match Figma specs */
 .form-select option {
     background-color: #2B414F;
     color: #FFFFFF;
-    padding: 12px 16px;
+    padding: 8px;
     border: none;
+    display: flex;
+    align-items: center;
+    align-self: stretch;
+}
+
+/* Hide placeholder options from dropdown list */
+.form-select option[disabled][selected][hidden] {
+    display: none;
 }
 
 .form-select option:hover {
@@ -245,11 +277,20 @@ body {
     color: #2B414F;
 }
 
+.form-select option[disabled] {
+    color: #8E8F8F;
+    background-color: #2B414F;
+}
+
 .form-select option.category-header {
     color: #8E8F8F;
     font-weight: 400;
     cursor: default;
     background-color: #2B414F;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    align-self: stretch;
 }
 
 .form-select option.category-header:hover {
