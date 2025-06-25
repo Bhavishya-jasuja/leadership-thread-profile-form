@@ -241,7 +241,14 @@ body {
     gap: 8px;
     align-self: stretch;
 }
-
+#role:invalid {
+    color: #FFFFFF; /* White color for "Specialist (Partner)" placeholder */
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 142.857% */
+}
 .form-select:invalid {
     color: #8E8F8F;
 }
